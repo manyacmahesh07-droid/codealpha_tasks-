@@ -1,8 +1,21 @@
 {
-  "name": "orbit-market",
+  "name": "socialpulse-mini-social-app",
   "version": "1.0.0",
-  "description": "A modern full-stack e-commerce store",
+  "description": "A polished mini social media platform built with Express and a file-based database",
   "main": "server.js",
-  "scripts": { "start": "node server.js", "dev": "node --watch server.js" },
-  "dependencies": { "express": "^5.1.0", "express-session": "^1.18.1", "bcryptjs": "^2.4.3" }
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js"
+  },
+  "keywords": [
+    "social-media",
+    "express",
+    "javascript",
+    "portfolio-project"
+  ],
+  "author": "GitHub Copilot",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.21.2"
+  }
 }
