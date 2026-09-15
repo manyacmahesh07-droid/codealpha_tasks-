@@ -1,21 +1,14 @@
 {
-  "name": "socialpulse-mini-social-app",
-  "version": "1.0.0",
-  "description": "A polished mini social media platform built with Express and a file-based database",
-  "main": "server.js",
+  "name": "real-time-communication-app",
+  "private": true,
   "scripts": {
-    "start": "node server.js",
-    "dev": "node --watch server.js"
+    "server": "npm --prefix backend run dev",
+    "client": "npm --prefix frontend run dev",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "build": "npm --prefix frontend run build",
+    "start": "npm --prefix backend run start"
   },
-  "keywords": [
-    "social-media",
-    "express",
-    "javascript",
-    "portfolio-project"
-  ],
-  "author": "GitHub Copilot",
-  "license": "MIT",
-  "dependencies": {
-    "express": "^4.21.2"
+  "devDependencies": {
+    "concurrently": "^9.0.1"
   }
 }
